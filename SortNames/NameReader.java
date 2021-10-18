@@ -9,6 +9,15 @@ import java.util.Scanner;
 public class NameReader {
 
 	public static void main(String[] args) throws IOException {
+
+		Boolean Reverse = false;
+
+		if(args.length > 0)
+    		{
+        		if(args[0].equals("Reverse")){	
+				Reverse = true;
+			}
+    		}
 		
 		//find file
 		File file = new File("names.txt");
@@ -50,12 +59,24 @@ public class NameReader {
 		
 		// array of values stored in nameArray, all thats left is to sort them :)
 		Arrays.sort(nameArray, Comparator.comparingInt(String::length).thenComparing(String::compareTo));
-		
+
 		//print when complete
 		String fileContent = "";
+
+		if(Reverse == true){
+		System.out.println("Names Printed in Reverse!");
+		for(int j = 49; j >=0; j--) {
+			System.out.println(nameArray[j]);
+			fileContent = fileContent.concat(nameArray[j] + "\n");
+		}
+		}
+		else {
+		
+		
 		for(int j = 0; j < 50; j++) {
 			System.out.println(nameArray[j]);
 			fileContent = fileContent.concat(nameArray[j] + "\n");
+		}
 		}
 		System.out.println("File exported to sortNames");
 		
@@ -67,3 +88,4 @@ public class NameReader {
 	}
 
 }
+

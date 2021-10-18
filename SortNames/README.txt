@@ -11,6 +11,10 @@ Run javac NameReader.java to compile, once done the .class file should be create
 Run java NameReader to run the program. Outputed should be the names sorted correctly in the stout. My program also creates a file and outputs the names
 in the same folder.
 
+Updated 10/18/2021
+Now if you add the argument "Reverse" case sensitive, to your run command, resulting in the new command "java NameReader Reverse" 
+The sort will be reversed.
+
 Program also runs in Ubuntu.
 
 

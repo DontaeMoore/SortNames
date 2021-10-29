@@ -33,5 +33,5 @@ jobs:
       - name: Run a multi-line script
         run: |
          cd SortNames
-         sh SortNames/TestScript.bat
+         Run SortNames/TestScript.bat
         

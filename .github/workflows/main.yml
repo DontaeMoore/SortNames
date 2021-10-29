@@ -26,12 +26,15 @@ jobs:
       - uses: actions/checkout@v2
 
     # Runs a single command using the runners shell
-      - name: Run a one-line script
-        run: SortNames/TestScript.bat
-        
       - name: Make executeable
         run: chmod +x SortNames/TestScript.bat
 
+    
+    
+      - name: Run a one-line script
+        run: SortNames/TestScript.bat
+        
+   
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
         run: |

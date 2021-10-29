@@ -25,33 +25,14 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
 
-      # Runs a single command using the runners shell
+    # Runs a single command using the runners shell
       - name: Run a one-line script
-        run: echo yellow
+        run: ./TestScript.bat
 
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
         run: |
-        @ECHO OFF
-        javac NameReader.java
-        java NameReader
-        fc /b sortedNames.txt SortedText.txt > nul
-        echo.
-        if errorlevel 1 (
-            echo The Sorted text in sortedNames does not match the text from our already sorted text in SortedText!
-        ) else (
-            echo The Sorted text in sortedNames matches the text from our already sorted text in SortedText!
-        )
-        echo.
-        java NameReader Reverse
-        fc /b sortedNames.txt SortedTextReverse.txt > nul
-        echo.
-        if errorlevel 1 (
-            echo The Reversed Sorted text in sortedNames does not match the text from our already reverse sorted text in SortedTextReverse!
-        ) else (
-            echo The Reversed Sorted text in sortedNames matches the text from our already reverse sorted text in SortedTextReverse!
-        )
-        echo.
-        PAUSE
+          echo Add other actions to build,
+          echo test, and deploy your project.st
         
         

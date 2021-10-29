@@ -30,7 +30,7 @@ jobs:
           cd SortNames
           echo xd
           chmod +x TestScript.bat
-          TestScript.bat
+          .\TestScript.bat
         
    
     

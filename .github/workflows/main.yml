@@ -36,6 +36,5 @@ jobs:
         run: |
        
          chmod +x SortNames/TestScript.bat
-         cd SortNames
-         TestScript.bat
+       
    

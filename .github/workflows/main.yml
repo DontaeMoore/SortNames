@@ -27,9 +27,6 @@ jobs:
       - name: Test if the build is runnable
         run: |
           chmod +x SortNames/TestScript.bat
-          dir
-          cd Sortnames
-          dir
           SortNames/TestScript.bat
         
    

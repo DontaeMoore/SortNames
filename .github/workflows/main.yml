@@ -25,18 +25,16 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
 
-          cd SortNames
-    # Runs a single command using the runners shell
-      - name: Make executeable
-        run: chmod +x SortNames/TestScript.bat
 
     
-    
       - name: Run a one-line script
-        run: SortNames/TestScript.bat
+        run: echo lol
         
    
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
         run: |
+         cd SortNames
+         chmod +x SortNames/TestScript.bat
+         SortNames/TestScript.bat
    

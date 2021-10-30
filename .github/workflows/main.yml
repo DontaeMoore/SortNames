@@ -33,18 +33,6 @@ jobs:
           javac NameReader.java
           java NameReader
           
-      
-      
-      
-         
-      
-     
-        
-      - name: Run bat script on bash
-        shell: bash
-        run: |
-          chmod +x SortNames/TestScript.bat
-          SortNames/TestScript.bat
           
         
       - name: Test if the build is runnable

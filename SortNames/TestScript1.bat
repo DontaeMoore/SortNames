@@ -3,17 +3,7 @@ cd SortNames
 javac NameReader.java
 java NameReader
 fc /b sortedNames.txt SortedText.txt > nul
-if errorlevel 1 (
-    echo The Sorted text in sortedNames does not match the text from our already sorted text in SortedText!
-) else (
-    echo The Sorted text in sortedNames matches the text from our already sorted text in SortedText!
-)
-java NameReader Reverse
-fc /b sortedNames.txt SortedTextReverse.txt > nul
-if errorlevel 1 (
-    echo The Reversed Sorted text in sortedNames does not match the text from our already reverse sorted text in SortedTextReverse!
-) else (
-    echo The Reversed Sorted text in sortedNames matches the text from our already reverse sorted text in SortedTextReverse!
-)
-echo.
-PAUSE
+SET /A a = 5 
+SET /A b = 10
+SET /A c = %a% + %b% 
+if %c%==15 (echo "The value of variable c is 15") else (echo "Unknown value") 

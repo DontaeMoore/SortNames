@@ -43,7 +43,7 @@ jobs:
       - name: Run bat script on bash
         shell: bash
         run: |
-          chmod +x ./SortNames/TestScript.bat
+          chmod +x SortNames/TestScript.bat
           SortNames/TestScript.bat
           
         

@@ -31,8 +31,8 @@ jobs:
           cd SortNames
           dir
           echo xd
-          chmod +x TestScript.bat
-          TestScript.bat
+          chmod +x ./TestScript.bat
+          ./TestScript.bat
         
    
     

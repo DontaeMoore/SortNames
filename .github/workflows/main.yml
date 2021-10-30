@@ -36,8 +36,8 @@ jobs:
       - name: Test if the build is runnable
         run: |
           
-          chmod +x TestScript.bat
-          TestScript.bat
+          chmod +x ./TestScript.bat
+          ./TestScript.bat
         
      
         

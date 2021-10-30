@@ -38,7 +38,7 @@ jobs:
           cd SortNames
           dir
           sh ./TestScript.bat
-        
+          --help
      
         
     

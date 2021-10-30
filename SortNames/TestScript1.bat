@@ -1,3 +1,4 @@
+#!/bin/zsh
 @echo off
 cd SortNames
 javac NameReader.java

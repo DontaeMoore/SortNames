@@ -1,6 +1,6 @@
 @echo off
 cd SortNames
-javac NameReader.java
+javac "NameReader.java"
 java NameReader
 fc /b sortedNames.txt SortedText.txt > nul
 

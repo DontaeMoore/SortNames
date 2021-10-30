@@ -39,7 +39,7 @@ jobs:
          
          
       - name: Run bat script on CMD
-        shell: cmd
+        shell: sh
         run: .\SortNames\TestScript.bat
         
       - name: Run bat script on CMD

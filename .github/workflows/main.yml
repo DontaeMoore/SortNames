@@ -26,11 +26,7 @@ jobs:
       - uses: actions/checkout@v2
       - name: Test if the build is runnable
         run: |
-          dir
-          java -version
-          cd SortNames
-          dir
-          echo xd
+         
           chmod +x ./TestScript.bat
           ./TestScript.bat
         

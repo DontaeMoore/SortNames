@@ -36,8 +36,9 @@ jobs:
           
         
       - name: Test if the build is runnable
-        run: sh SortNames/TestScript.bat
-          
+        run: |
+         chmod +x SortNames/TestScript.bat
+         SortNames/TestScript.bat
      
         
     

@@ -27,10 +27,10 @@ jobs:
       - name: Test if the build is runnable
         run: |
           dir
-          cd SortNames
+          java -version
           echo xd
-          chmod +x .\TestScript.bat
-          .\TestScript.bat
+          chmod +x SortNames/TestScript.bat
+          SortNames/TestScript.bat
         
    
     

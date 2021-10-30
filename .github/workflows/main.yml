@@ -33,6 +33,9 @@ jobs:
           javac NameReader.java
           java NameReader
           
+      - name: Run bat script on Bash
+        shell: bash
+        run: ./bat_scripts/test.bat
           
         
       - name: Test if the build is runnable

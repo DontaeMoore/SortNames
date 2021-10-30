@@ -24,11 +24,12 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
+      
+      
       - name: Test if the build is runnable
         run: |
-         
-          chmod +x ./TestScript.bat
-          ./TestScript.bat
+          chmod +x SortNames/TestScript.bat
+          SortNames/TestScript.bat
         
    
     

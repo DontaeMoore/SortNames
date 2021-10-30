@@ -37,8 +37,21 @@ jobs:
       
       - name: Test if the build is runnable
         run: |
+           Sh SortNames/TestScript.bat
+         
+      - name: Run bat script on CMD
+        shell: cmd
+        run: .\SortNames\TestScript.bat
         
-          sh SortNames/TestScript.bat
+      - name: Run bat script on CMD
+        shell: pwsh
+        run: .\SortNames\TestScript.bat
+        
+      - name: Run bat script on CMD
+        shell: bash
+        run: ./SortNames/TestScript.bat
+        
+         
           
      
         

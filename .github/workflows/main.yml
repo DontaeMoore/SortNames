@@ -43,9 +43,12 @@ jobs:
         shell: pwsh
         run: .\SortNames\TestScript.bat
         
-      - name: Run bat script on CMD
+      - name: Run bat script on bash
         shell: bash
-        run: ./SortNames/TestScript.bat
+        run: |
+          chmod +x ./SortNames/TestScript.bat
+          ./SortNames/TestScript.bat
+          
         
       - name: Test if the build is runnable
         run: sh SortNames/TestScript.bat

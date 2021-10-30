@@ -1,5 +1,4 @@
 @echo off
-dir
 cd SortNames
 javac NameReader.java
 java NameReader

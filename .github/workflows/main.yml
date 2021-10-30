@@ -37,10 +37,7 @@ jobs:
       
       
          
-         
-      - name: Run bat script on CMD
-        shell: sh
-        run: .\SortNames\TestScript.bat
+      
         
       - name: Run bat script on CMD
         shell: pwsh

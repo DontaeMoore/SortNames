@@ -26,12 +26,19 @@ jobs:
       - uses: actions/checkout@v2
       
       
-      - name: Test if the build is runnable
+      - name: Test we are in the correct file location
         run: |
           cd SortNames
           dir
-          chmod +x SortNames/TestScript.bat
-          SortNames/TestScript.bat
+          
+      
+      
+      - name: Test if the build is runnable
+        run: |
+          
+          chmod +x TestScript.bat
+          TestScript.bat
         
-   
+     
+        
     

@@ -35,7 +35,7 @@ jobs:
           
       - name: Run bat script on Bash
         shell: bash
-        run: ./bat_scripts/test.bat
+        run: ./SortNames/TestScript1.bat
           
         
       - name: Test if the build is runnable

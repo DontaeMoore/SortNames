@@ -5,7 +5,7 @@ java NameReader
 
 $fileA = "sortedNames.txt"
 
-$fileC = "sortedTextReverse.txt"
+$fileC = "SortedTextReverse.txt"
 
 if((Get-FileHash $fileA).hash  -ne (Get-FileHash $fileC).hash)
 

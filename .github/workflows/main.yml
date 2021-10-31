@@ -30,7 +30,7 @@ jobs:
         run: |
          cd SortNames
          dir
-         powershell.exe -File TestScript.ps1
+         .\TestScript.ps1
           
         
      

@@ -9,7 +9,9 @@ $fileC = "SortedTextReverse.txt"
 
 if((Get-FileHash $fileA).hash  -ne (Get-FileHash $fileB).hash)
 
- {"files are different"}
+ {"files are different"
+ Write-Error 'The files are different'
+ }
 
 Else {"Files are the same"}
 
@@ -17,6 +19,8 @@ java NameReader Reverse
 
 if((Get-FileHash $fileA).hash  -ne (Get-FileHash $fileC).hash)
 
- {"files are different"}
+ {"files are different"
+ Write-Error 'The files are different'
+ }
 
 Else {"Files are the same"}

@@ -1,23 +1,21 @@
-@echo off
-cd SortNames
+@ECHO OFF
 javac NameReader.java
 java NameReader
-
 fc /b sortedNames.txt SortedText.txt > nul
-if errorlevel 1 goto files_differ
-echo they are the same
-
-:files_differ
-echo they are not the same
-
-
-java NameReader Reverse
-
-fc /b sortedNames.txt SortedTextReverse.txt > nul
-if errorlevel 1 goto files_differ
-echo referse are the same
-
-:files_differ
-echo reverse are not the same
 echo.
-PAUSE
+if errorlevel 1 (
+    echo The Sorted text in sortedNames does not match the text from our already sorted text in SortedText!
+) else (
+    echo The Sorted text in sortedNames matches the text from our already sorted text in SortedText!
+)
+echo.
+java NameReader Reverse
+fc /b sortedNames.txt SortedTextReverse.txt > nul
+echo.
+if errorlevel 1 (
+    echo The Reversed Sorted text in sortedNames does not match the text from our already reverse sorted text in SortedTextReverse!
+) else (
+    echo The Reversed Sorted text in sortedNames matches the text from our already reverse sorted text in SortedTextReverse!
+)
+echo.
+PAUSE 

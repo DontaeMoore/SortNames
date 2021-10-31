@@ -25,14 +25,15 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
       
-   
-          
-        
-      - name: Test if the build is runnable
+      - name: Run bat script on PowerShell
+        shell: pwsh
         run: |
          cd SortNames
          dir
-         .\TestScript1
+         .\TestScript1 
+          
+        
+     
      
         
     

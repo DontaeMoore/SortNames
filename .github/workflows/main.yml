@@ -31,7 +31,8 @@ jobs:
       - name: Test if the build is runnable
         run: |
          cd SortNames
-         TestScript1.bat
+         dir
+         TestScript1
      
         
     

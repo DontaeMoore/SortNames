@@ -25,23 +25,14 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
       
-      
-      - name: Test we are in the correct file location
-        run: |
-          cd SortNames
-          dir
-          javac NameReader.java
-          java NameReader
-          
-      - name: Run bat script on Bash
-        shell: bash
-        run: sh ./SortNames/TestScript1.bat
+   
           
         
       - name: Test if the build is runnable
         run: |
-         chmod +x SortNames/TestScript1.bat
-         SortNames/TestScript1.bat
+         cd SortNames
+         chmod +x TestScript1.bat
+         TestScript1.bat
      
         
     
